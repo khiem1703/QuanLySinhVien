@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="QuanLySinhVien.Demo.Layout" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>QuanLySinhVien</title>
+    <link rel="stylesheet" href="../css/mystyle.css">
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="banner">
+                <img id="logo" src="../img/logo1.png" alt="LogoVNu">
+                <div id="title">
+                    <p id="title1">Website Quản Lý Sinh Viên</p>
+                </div>
+            </div>
+        </div>
+        <div id="menutop">
+            <ul class="ultop">
+                <li class="litop"><a class="active" href="#home">Trang Chủ</a></li>
+                <li class="litop"><a href="#news">Thông tin người học</a></li>
+                <li class="litop"><a href="#contact">Liên Hệ</a></li>
+                <li class="litop"><a href="#about">Giới thiệu</a></li>
+            </ul>
+        </div>
+        <div id="navbars">
+            <ul class="ulnav">
+                <li class="linav"><a href="#home">Hướng dẫn</a></li>
+                <li class="linav"><a href="#news">Hồ sơ sinh viên</a></li>
+                <li class="linav"><a href="#contact">Kết quả đăng ký học</a></li>
+                <li class="linav"><a href="#about">Đăng ký môn học</a></li>
+                <li class="linav"><a href="#about">Kết quả học tập</a></li>
+                <li class="linav"><a href="#about">Lịch Thi</a></li>
+                <li class="linav"><a href="#about">Gửi yêu cầu hỗ trợ</a></li>
+                <li class="linav"><a href="#about">Biểu Mẫu</a></li>
+                <li class="linav"><a href="#about">Email</a></li>
+
+
+            </ul>
+        </div>
+        <div id="content">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <img id="ftImg" src="../img/logo1.png">
+            <div class="ft1">
+                <strong style="color: white">Đại học Quốc gia Hà Nội</strong>
+                <ul style="color: white">
+                    <li>ĐỊA CHỈ: 144- Xuân Thủy Street - Cầu Giấy - Hà Nội</li>
+                    <li>ĐIỆN THOẠI: 024 3754 7670</li>
+                    <li>FAX: 024 3754 7670</li>
+                    <li>EMAIL: media@vnu.edu.vn</li>
+                </ul>
+            </div>
+            <div class="ft1">
+                <strong style="color: white">Mạng xã hội & Website</strong>
+
+                <ul style="color: white">
+                    <li class="">
+                        <a href="https://www.facebook.com/VNU.DHQG/" style="text-decoration: none; color: #FFFFFF; font-size: 14px;"><i class="fa fa-facebook" style=""></i><span>Fanpage VNU</span></a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.vnu.edu.vn/home/" style="text-decoration: none; color: #FFFFFF; font-size: 14px;"><span>Website VNU</span></a>
+                    </li>
+                    <li class="">
+                        <a href="https://daotao.vnu.edu.vn/dkmh/login.asp" style="text-decoration: none; color: #FFFFFF; font-size: 14px;"><span>Website Đào tạo</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
